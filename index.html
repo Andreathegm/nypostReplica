@@ -2,9 +2,529 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Post</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header styles */
+        .top-bar {
+            background-color: #d00;
+            color: white;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .sections-btn {
+            background-color: #d00;
+            color: white;
+            border: 1px solid white;
+            padding: 5px 15px;
+            margin-right: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .icon-btn {
+            color: white;
+            margin-right: 10px;
+            font-size: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .logo-container {
+            text-align: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: clamp(24px, 5vw, 36px);
+            font-weight: bold;
+            font-style: italic;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .page-six-banner {
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Breaking news banner */
+        .breaking-news {
+            background-color: black;
+            color: white;
+            display: flex;
+            padding: 10px 0;
+            overflow: hidden;
+        }
+
+        .breaking-label {
+            background-color: #d00;
+            padding: 5px 15px;
+            font-weight: bold;
+            margin-right: 15px;
+            white-space: nowrap;
+        }
+
+        .breaking-content {
+            padding: 5px 0;
+            white-space: nowrap;
+            animation: scroll-text 20s linear infinite;
+        }
+
+        @keyframes scroll-text {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Promo section */
+        .promo-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .promo-box {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .promo-box:last-child {
+            border-bottom: none;
+        }
+
+        .promo-img {
+            min-width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .promo-text {
+            font-size: 14px;
+        }
+
+        .promo-cta {
+            color: #d00;
+            font-weight: bold;
+        }
+
+        /* Main content */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+        }
+
+        .article-section {
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .article-title {
+            color: #d00;
+            font-size: clamp(24px, 5vw, 36px);
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .article-images {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+        .placeholder {
+            background-color: #ddd;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            position: relative;
+        }
+
+        .placeholder-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .inset-image {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 80px;
+            height: 80px;
+            border: 2px solid white;
+        }
+
+        .inset-image .placeholder {
+            padding-top: 100%;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 100%;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .covers-section {
+            background-color: white;
+            padding: 15px;
+        }
+
+        .covers-header {
+            text-align: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: white;
+            border: 2px solid #d00;
+        }
+
+        .covers-title {
+            color: #d00;
+            font-weight: bold;
+        }
+
+        .today-cover {
+            text-align: center;
+        }
+
+        .cover-nav {
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cover-option {
+            padding: 5px;
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .cover-option:first-child {
+            color: #d00;
+        }
+
+        .cover-placeholder {
+            width: 100%;
+            height: 400px;
+            max-height: 70vh;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #666;
+        }
+
+        /* Mobile navigation toggle */
+        .menu-toggle {
+            display: none;
+        }
+
+        /* Media queries for responsive design */
+
+        /* Small tablets and large phones */
+        @media (min-width: 576px) {
+            .promo-section {
+                flex-wrap: nowrap;
+            }
+
+            .promo-box {
+                width: 32%;
+                padding: 0;
+                border-bottom: none;
+            }
+
+            .article-images {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .main-image {
+                grid-column: 1;
+                grid-row: 1 / span 2;
+            }
+
+            .secondary-image {
+                grid-column: 2;
+            }
+        }
+
+        /* Medium devices (tablets) */
+        @media (min-width: 768px) {
+            .top-bar-content {
+                padding: 0 15px;
+            }
+
+            .main-content {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .article-section {
+                width: 65%;
+            }
+
+            .sidebar {
+                width: 35%;
+                padding-left: 20px;
+            }
+
+            .breaking-content {
+                animation: none;
+                white-space: normal;
+                overflow: visible;
+            }
+        }
+
+        /* Large devices (desktops) */
+        @media (min-width: 992px) {
+            .article-section {
+                width: 70%;
+            }
+
+            .sidebar {
+                width: 30%;
+            }
+        }
+
+        /* Extra large devices */
+        @media (max-width: 575px) {
+            .top-bar-content {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .top-bar-left {
+                order: 1;
+                margin-bottom: 10px;
+            }
+
+            .logo-container {
+                width: 100%;
+                order: 0;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            .top-bar-right {
+                order: 2;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            .page-six-banner {
+                width: 80%;
+            }
+
+            .breaking-label {
+                padding: 5px 10px;
+                font-size: 12px;
+            }
+
+            .breaking-content {
+                font-size: 12px;
+            }
+        }
+    </style>
 </head>
 <body>
+<!-- Header -->
+<header class="top-bar">
+    <div class="container">
+        <div class="top-bar-content">
+            <div class="top-bar-left">
+                <button class="sections-btn">SECTIONS</button>
+                <button class="icon-btn">🔍</button>
+                <button class="icon-btn">✉️</button>
+            </div>
 
+            <div class="logo-container">
+                <div class="logo">NEW YORK POST</div>
+            </div>
+
+            <div class="top-bar-right">
+                <div class="page-six-banner">
+                    <span>READ THE LATEST ON</span>
+                    <span><b>Page Six</b></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Breaking News Banner -->
+<div class="breaking-news">
+    <div class="container" style="display: flex;">
+        <div class="breaking-label">BREAKING NEWS</div>
+        <div class="breaking-content">Russian-American ballerina Ksenia Karelina released in prisoner swap</div>
+    </div>
+</div>
+
+<!-- Promotional Banners -->
+<div class="container">
+    <div class="promo-section">
+        <div class="promo-box">
+            <div class="promo-img">Sports+</div>
+            <div class="promo-text">Baseball season is here – get Sports+ so you never miss a story. <span class="promo-cta">TRY IT FREE →</span></div>
+        </div>
+
+        <div class="promo-box">
+            <div class="promo-img">Newsletter</div>
+            <div class="promo-text">Start your day with Post top news headlines. <span class="promo-cta">SUBSCRIBE NOW →</span></div>
+        </div>
+
+        <div class="promo-box">
+            <div class="promo-img">Radio</div>
+            <div class="promo-text">Weekdays 8-10am ET the all new Page Six Radio on SiriusXM Stars Channel 109. <span class="promo-cta">LISTEN →</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="main-content">
+        <!-- Article Section -->
+        <main class="article-section">
+            <h1 class="article-title">BIRD'S-EYE VIEW</h1>
+
+            <div class="article-images">
+                <div class="image-container main-image">
+                    <div class="placeholder">
+                        <div class="placeholder-text">Police scene aerial view</div>
+                    </div>
+                </div>
+                <div class="image-container secondary-image">
+                    <div class="placeholder">
+                        <div class="placeholder-text">Police with suspect</div>
+                    </div>
+                </div>
+                <div class="image-container secondary-image">
+                    <div class="placeholder">
+                        <div class="placeholder-text">Police officers</div>
+                    </div>
+                    <div class="inset-image">
+                        <div class="placeholder">
+                            <div class="placeholder-text">Suspect</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="#" class="social-icon" style="background-color: #4267B2;">f</a>
+                <a href="#" class="social-icon" style="background-color: #000;">𝕏</a>
+                <a href="#" class="social-icon" style="background-color: #C13584;">📷</a>
+                <a href="#" class="social-icon" style="background-color: #0077B5;">in</a>
+                <a href="#" class="social-icon" style="background-color: #D44638;">✉️</a>
+                <a href="#" class="social-icon" style="background-color: #FF0000;">▶️</a>
+            </div>
+
+            <!-- Covers Section -->
+            <div class="covers-section">
+                <div class="covers-header">
+                    <h2 class="covers-title">COVERS</h2>
+                </div>
+
+                <div class="today-cover">
+                    <h3>Today's Cover</h3>
+
+                    <div class="cover-nav">
+                        <div class="cover-option">FRONT COVER</div>
+                        <div class="cover-option">FLIP FOR BACK COVER</div>
+                    </div>
+
+                    <div class="cover-placeholder">Today's New York Post Cover</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
 </body>
 </html>
