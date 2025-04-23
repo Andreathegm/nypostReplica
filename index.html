@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New York Post</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="topbar.css">
+    <link rel="stylesheet" href="breakingnews.css">
     <style>
         * {
             margin: 0;
@@ -13,38 +16,13 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: white;
             line-height: 1.6;
         }
 
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
+        .page-visual{
+            margin: 10px  50px 0 50px ;
         }
-
-        /* Header styles */
-        .top-bar {
-            background-color: #d00;
-            color: white;
-            padding: 10px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .top-bar-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .top-bar-left {
-            display: flex;
-            align-items: center;
-        }
-
         .sections-btn {
             background-color: #d00;
             color: white;
@@ -53,6 +31,9 @@
             margin-right: 10px;
             font-weight: bold;
             cursor: pointer;
+        }
+        .top-bar-container{
+            background-color: #d00;
         }
 
         .icon-btn {
@@ -77,39 +58,28 @@
             white-space: nowrap;
         }
 
-        .page-six-banner {
-            background-color: black;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 0.8rem;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-        }
-
         /* Breaking news banner */
-        .breaking-news {
-            background-color: black;
-            color: white;
-            display: flex;
-            padding: 10px 0;
-            overflow: hidden;
-        }
+        /*.breaking-news {*/
+        /*    background-color: black;*/
+        /*    color: white;*/
+        /*    display: flex;*/
+        /*    padding: 10px 0;*/
+        /*    overflow: hidden;*/
+        /*}*/
 
-        .breaking-label {
-            background-color: #d00;
-            padding: 5px 15px;
-            font-weight: bold;
-            margin-right: 15px;
-            white-space: nowrap;
-        }
+        /*.breaking-label {*/
+        /*    background-color: #d00;*/
+        /*    padding: 5px 15px;*/
+        /*    font-weight: bold;*/
+        /*    margin-right: 15px;*/
+        /*    white-space: nowrap;*/
+        /*}*/
 
-        .breaking-content {
-            padding: 5px 0;
-            white-space: nowrap;
-            animation: scroll-text 20s linear infinite;
-        }
+        /*.breaking-content {*/
+        /*    padding: 5px 0;*/
+        /*    white-space: nowrap;*/
+        /*    animation: scroll-text 20s linear infinite;*/
+        /*}*/
 
         @keyframes scroll-text {
             0% { transform: translateX(100%); }
@@ -298,123 +268,112 @@
         }
 
         /* Mobile navigation toggle */
-        .menu-toggle {
-            display: none;
-        }
 
         /* Media queries for responsive design */
 
-        /* Small tablets and large phones */
-        @media (min-width: 576px) {
-            .promo-section {
-                flex-wrap: nowrap;
-            }
+        /*!* Small tablets and large phones *!*/
+        /*@media (min-width: 576px) {*/
+        /*    .promo-section {*/
+        /*        flex-wrap: nowrap;*/
+        /*    }*/
 
-            .promo-box {
-                width: 32%;
-                padding: 0;
-                border-bottom: none;
-            }
+        /*    .promo-box {*/
+        /*        width: 32%;*/
+        /*        padding: 0;*/
+        /*        border-bottom: none;*/
+        /*    }*/
 
-            .article-images {
-                grid-template-columns: 1fr 1fr;
-            }
+        /*    .article-images {*/
+        /*        grid-template-columns: 1fr 1fr;*/
+        /*    }*/
 
-            .main-image {
-                grid-column: 1;
-                grid-row: 1 / span 2;
-            }
+        /*    .main-image {*/
+        /*        grid-column: 1;*/
+        /*        grid-row: 1 / span 2;*/
+        /*    }*/
 
-            .secondary-image {
-                grid-column: 2;
-            }
-        }
+        /*    .secondary-image {*/
+        /*        grid-column: 2;*/
+        /*    }*/
+        /*}*/
 
-        /* Medium devices (tablets) */
-        @media (min-width: 768px) {
-            .top-bar-content {
-                padding: 0 15px;
-            }
+        /*!* Medium devices (tablets) *!*/
+        /*@media (min-width: 768px) {*/
+        /*    .top-bar-content {*/
+        /*        padding: 0 15px;*/
+        /*    }*/
 
-            .main-content {
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
+        /*    .main-content {*/
+        /*        flex-direction: row;*/
+        /*        flex-wrap: wrap;*/
+        /*    }*/
 
-            .article-section {
-                width: 65%;
-            }
+        /*    .article-section {*/
+        /*        width: 65%;*/
+        /*    }*/
 
-            .sidebar {
-                width: 35%;
-                padding-left: 20px;
-            }
+        /*    .sidebar {*/
+        /*        width: 35%;*/
+        /*        padding-left: 20px;*/
+        /*    }*/
 
-            .breaking-content {
-                animation: none;
-                white-space: normal;
-                overflow: visible;
-            }
-        }
+        /*    .breaking-content {*/
+        /*        animation: none;*/
+        /*        white-space: normal;*/
+        /*        overflow: visible;*/
+        /*    }*/
+        /*}*/
 
-        /* Large devices (desktops) */
-        @media (min-width: 992px) {
-            .article-section {
-                width: 70%;
-            }
+        /*!* Large devices (desktops) *!*/
+        /*@media (min-width: 992px) {*/
+        /*    .article-section {*/
+        /*        width: 70%;*/
+        /*    }*/
 
-            .sidebar {
-                width: 30%;
-            }
-        }
+        /*    .sidebar {*/
+        /*        width: 30%;*/
+        /*    }*/
+        /*}*/
 
-        /* Extra large devices */
-        @media (max-width: 575px) {
-            .top-bar-content {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
+        /*!* Extra large devices *!*/
+        /*@media (max-width: 575px) {*/
+        /*    .top-bar-content {*/
+        /*        flex-wrap: wrap;*/
+        /*        justify-content: center;*/
+        /*    }*/
 
-            .top-bar-left {
-                order: 1;
-                margin-bottom: 10px;
-            }
+        /*    .top-bar-left {*/
+        /*        order: 1;*/
+        /*        margin-bottom: 10px;*/
+        /*    }*/
 
-            .logo-container {
-                width: 100%;
-                order: 0;
-                margin-bottom: 10px;
-                text-align: center;
-            }
+        /*    .logo-container {*/
+        /*        width: 100%;*/
+        /*        order: 0;*/
+        /*        margin-bottom: 10px;*/
+        /*        text-align: center;*/
+        /*    }*/
+        /*    .breaking-label {*/
+        /*        padding: 5px 10px;*/
+        /*        font-size: 12px;*/
+        /*    }*/
 
-            .top-bar-right {
-                order: 2;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                margin-top: 10px;
-            }
-
-            .page-six-banner {
-                width: 80%;
-            }
-
-            .breaking-label {
-                padding: 5px 10px;
-                font-size: 12px;
-            }
-
-            .breaking-content {
-                font-size: 12px;
-            }
-        }
+        /*    .breaking-content {*/
+        /*        font-size: 12px;*/
+        /*    }*/
+        /*}*/
     </style>
 </head>
+
+
 <body>
+
 <!-- Header -->
-<header class="top-bar">
-    <div class="container">
-        <div class="top-bar-content">
+<header class="header">
+
+    <div class="header-container">
+
+        <div class="top-bar-container">
             <div class="top-bar-left">
                 <button class="sections-btn">SECTIONS</button>
                 <button class="icon-btn">🔍</button>
@@ -425,105 +384,114 @@
                 <div class="logo">NEW YORK POST</div>
             </div>
 
-            <div class="top-bar-right">
-                <div class="page-six-banner">
-                    <span>READ THE LATEST ON</span>
-                    <span><b>Page Six</b></span>
-                </div>
-            </div>
         </div>
+
+    <!--Navigation Menu-->
+        <div class ="nav-bar-container">
+            <nav class = inner-nav-bar-container>
+                <ul class="nav-list">
+                    <li><a href="#">PAGESIX</a></li>
+                    <li><a href="#">METRO</a></li>
+                    <li><a href="#">OPINION</a></li>
+                    <li><a href="#">BUSINESS</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </div>
 </header>
 
-<!-- Breaking News Banner -->
-<div class="breaking-news">
-    <div class="container" style="display: flex;">
-        <div class="breaking-label">BREAKING NEWS</div>
-        <div class="breaking-content">Russian-American ballerina Ksenia Karelina released in prisoner swap</div>
+<div class = "page-visual">
+    <!-- Breaking News Banner -->
+    <div class="breaking-news">
+
+            <div class="breaking-label">BREAKING NEWS</div>
+            <div class="breaking-content">Russian-American ballerina Ksenia Karelina released in prisoner swap</div>
+
     </div>
-</div>
 
-<!-- Promotional Banners -->
-<div class="container">
-    <div class="promo-section">
-        <div class="promo-box">
-            <div class="promo-img">Sports+</div>
-            <div class="promo-text">Baseball season is here – get Sports+ so you never miss a story. <span class="promo-cta">TRY IT FREE →</span></div>
-        </div>
+    <!-- Promotional Banners -->
+    <div class="container">
+        <div class="promo-section">
+            <div class="promo-box">
+                <div class="promo-img">Sports+</div>
+                <div class="promo-text">Baseball season is here – get Sports+ so you never miss a story. <span class="promo-cta">TRY IT FREE →</span></div>
+            </div>
 
-        <div class="promo-box">
-            <div class="promo-img">Newsletter</div>
-            <div class="promo-text">Start your day with Post top news headlines. <span class="promo-cta">SUBSCRIBE NOW →</span></div>
-        </div>
+            <div class="promo-box">
+                <div class="promo-img">Newsletter</div>
+                <div class="promo-text">Start your day with Post top news headlines. <span class="promo-cta">SUBSCRIBE NOW →</span></div>
+            </div>
 
-        <div class="promo-box">
-            <div class="promo-img">Radio</div>
-            <div class="promo-text">Weekdays 8-10am ET the all new Page Six Radio on SiriusXM Stars Channel 109. <span class="promo-cta">LISTEN →</span></div>
+            <div class="promo-box">
+                <div class="promo-img">Radio</div>
+                <div class="promo-text">Weekdays 8-10am ET the all new Page Six Radio on SiriusXM Stars Channel 109. <span class="promo-cta">LISTEN →</span></div>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="main-content">
-        <!-- Article Section -->
-        <main class="article-section">
-            <h1 class="article-title">BIRD'S-EYE VIEW</h1>
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Article Section -->
+            <main class="article-section">
+                <h1 class="article-title">BIRD'S-EYE VIEW</h1>
 
-            <div class="article-images">
-                <div class="image-container main-image">
-                    <div class="placeholder">
-                        <div class="placeholder-text">Police scene aerial view</div>
-                    </div>
-                </div>
-                <div class="image-container secondary-image">
-                    <div class="placeholder">
-                        <div class="placeholder-text">Police with suspect</div>
-                    </div>
-                </div>
-                <div class="image-container secondary-image">
-                    <div class="placeholder">
-                        <div class="placeholder-text">Police officers</div>
-                    </div>
-                    <div class="inset-image">
+                <div class="article-images">
+                    <div class="image-container main-image">
                         <div class="placeholder">
-                            <div class="placeholder-text">Suspect</div>
+                            <div class="placeholder-text">Police scene aerial view</div>
+                        </div>
+                    </div>
+                    <div class="image-container secondary-image">
+                        <div class="placeholder">
+                            <div class="placeholder-text">Police with suspect</div>
+                        </div>
+                    </div>
+                    <div class="image-container secondary-image">
+                        <div class="placeholder">
+                            <div class="placeholder-text">Police officers</div>
+                        </div>
+                        <div class="inset-image">
+                            <div class="placeholder">
+                                <div class="placeholder-text">Suspect</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
+            </main>
 
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <!-- Social Media Icons -->
-            <div class="social-icons">
-                <a href="#" class="social-icon" style="background-color: #4267B2;">f</a>
-                <a href="#" class="social-icon" style="background-color: #000;">𝕏</a>
-                <a href="#" class="social-icon" style="background-color: #C13584;">📷</a>
-                <a href="#" class="social-icon" style="background-color: #0077B5;">in</a>
-                <a href="#" class="social-icon" style="background-color: #D44638;">✉️</a>
-                <a href="#" class="social-icon" style="background-color: #FF0000;">▶️</a>
-            </div>
-
-            <!-- Covers Section -->
-            <div class="covers-section">
-                <div class="covers-header">
-                    <h2 class="covers-title">COVERS</h2>
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="#" class="social-icon" style="background-color: #4267B2;">f</a>
+                    <a href="#" class="social-icon" style="background-color: #000;">𝕏</a>
+                    <a href="#" class="social-icon" style="background-color: #C13584;">📷</a>
+                    <a href="#" class="social-icon" style="background-color: #0077B5;">in</a>
+                    <a href="#" class="social-icon" style="background-color: #D44638;">✉️</a>
+                    <a href="#" class="social-icon" style="background-color: #FF0000;">▶️</a>
                 </div>
 
-                <div class="today-cover">
-                    <h3>Today's Cover</h3>
-
-                    <div class="cover-nav">
-                        <div class="cover-option">FRONT COVER</div>
-                        <div class="cover-option">FLIP FOR BACK COVER</div>
+                <!-- Covers Section -->
+                <div class="covers-section">
+                    <div class="covers-header">
+                        <h2 class="covers-title">COVERS</h2>
                     </div>
 
-                    <div class="cover-placeholder">Today's New York Post Cover</div>
+                    <div class="today-cover">
+                        <h3>Today's Cover</h3>
+
+                        <div class="cover-nav">
+                            <div class="cover-option">FRONT COVER</div>
+                            <div class="cover-option">FLIP FOR BACK COVER</div>
+                        </div>
+
+                        <div class="cover-placeholder">Today's New York Post Cover</div>
+                    </div>
                 </div>
-            </div>
-        </aside>
+            </aside>
+        </div>
     </div>
 </div>
 </body>

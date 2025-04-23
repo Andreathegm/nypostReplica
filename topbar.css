@@ -1,0 +1,82 @@
+.top-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.top-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+.sections-btn {
+    padding: 5px 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 768px) {
+    .top-bar-container {
+        padding: 5px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .sections-btn {
+        font-size: 0.8rem;
+    }
+
+    .icon-btn {
+        font-size: 1rem;
+    }
+}
+
+/* For small screens, reposition elements to avoid overlap */
+@media (max-width: 600px) {
+    .top-bar-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo-container {
+        position: static;
+        transform: none;
+        order: 1;
+        margin-bottom: 10px;
+    }
+
+    .top-bar-left {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+    }
+}

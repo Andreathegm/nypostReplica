@@ -1,0 +1,18 @@
+.breaking-news {
+    background-color: orange;
+    color: white;
+    display: flex;
+
+}
+
+.breaking-label {
+    font-weight: bold;
+    white-space: nowrap;
+    background: black;
+}
+
+.breaking-content {
+    margin-left: 30px;
+    white-space: nowrap;
+
+}
