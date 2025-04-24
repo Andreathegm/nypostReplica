@@ -1,4 +1,5 @@
 .top-bar-container {
+    background-color: #C60800;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,14 +12,15 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    margin: 0 2px 0 0;
 }
 
 .logo-container {
+    margin: 0 0 0 2px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
-
 .logo {
     font-weight: bold;
     font-size: 1.5rem;
@@ -27,56 +29,96 @@
 
 .sections-btn {
     padding: 5px 10px;
-    background-color: #000;
     color: #fff;
-    border: none;
     cursor: pointer;
 }
 
 .icon-btn {
-    background: none;
-    border: none;
+    display: flex;           /* Rende il contenitore flessibile */
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center;     /* Centra verticalmente */
+    border: none;            /* rimuove il bordo (opzionale) */
+    background-color: transparent;
     font-size: 1.2rem;
     cursor: pointer;
 }
+.icon-btn span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#mail{
+    background-image: url('https://nypost.com/wp-content/themes/gtf/client/build/media/email-solid-72c3f17b721401de646d.svg');
+    margin-top: 5px;
+}
+#search\ glass{
+    background-image: url('images/search_glass.png');
+}
+#menu{
+    background-image : url('images/choice_menu.png');')
+}
+.section-wrapper{
+    display: flex;
+    border: 2px solid white;
+
+
+}
+.logo_image_wrapper{
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    margin-left: 100px;
+    margin-top: 15px;
+        max-width: 70%; /* Limita la larghezza massima al 100% della larghezza del contenitore */
+        max-height: 70%; /* Limita l'altezza massima al 100% dell'altezza del contenitore */
+        height: auto; /* Mantiene le proporzioni originali */
+}
+
 
 /* Responsive adjustments for medium screens */
 @media (max-width: 768px) {
     .top-bar-container {
-        padding: 5px;
-    }
-
-    .logo {
-        font-size: 1.2rem;
-    }
-
-    .sections-btn {
-        font-size: 0.8rem;
-    }
-
-    .icon-btn {
-        font-size: 1rem;
-    }
-}
-
-/* For small screens, reposition elements to avoid overlap */
-@media (max-width: 600px) {
-    .top-bar-container {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
 
     .logo-container {
         position: static;
         transform: none;
         order: 1;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .top-bar-left {
         order: 2;
         width: 100%;
         justify-content: center;
+        margin-bottom: 5px;
     }
+}
+
+/* For small screens, reposition elements to avoid overlap */
+@media (max-width: 740px) {
+    .top-bar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container {
+        position: static;
+        transform: none;
+        order: 1;
+        margin-bottom: 5px;
+    }
+
+    .top-bar-left {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
 }
