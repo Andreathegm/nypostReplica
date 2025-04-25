@@ -3,6 +3,7 @@ function updateBorders() {
     let lastTop = null;
     let boxesInCurrentRow = 0;
     let currentRowTop = null;
+    let borderStyle = '1px solid black';
 
     // Inizialmente rimuovi tutti i bordi destri
     boxes.forEach(box => box.style.borderRight = 'none');
@@ -43,7 +44,7 @@ function updateBorders() {
 
             // Aggiungi bordo solo se non è l'ultimo elemento della riga
             if (elementsInCurrentRow < boxesInCurrentRow) {
-                boxes[i].style.borderRight = '1px solid #ddd';
+                boxes[i].style.borderRight = borderStyle;
             }
         } else {
             // Nuova riga
@@ -52,7 +53,7 @@ function updateBorders() {
 
             // Se c'è solo un elemento in questa nuova riga, non mostrare il bordo
             if (boxesInCurrentRow > 1) {
-                boxes[i].style.borderRight = '1px solid #ddd';
+                boxes[i].style.borderRight = borderStyle;
             }
         }
     }

@@ -1,3 +1,4 @@
+
 .top-bar-container {
     background-color: #C60800;
     display: flex;
@@ -16,6 +17,7 @@
 }
 
 .logo-container {
+    height: 100%;
     margin: 0 0 0 2px;
     position: absolute;
     left: 50%;
@@ -66,18 +68,15 @@
 
 }
 .logo_image_wrapper{
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-#logo{
-    margin-left: 100px;
-    margin-top: 15px;
-        max-width: 70%; /* Limita la larghezza massima al 100% della larghezza del contenitore */
-        max-height: 70%; /* Limita l'altezza massima al 100% dell'altezza del contenitore */
-        height: auto; /* Mantiene le proporzioni originali */
+
+#logo-icon{
+        height: 80%;
 }
-
-
 /* Responsive adjustments for medium screens */
 @media (max-width: 768px) {
     .top-bar-container {
@@ -98,27 +97,9 @@
         justify-content: center;
         margin-bottom: 5px;
     }
+     #logo-icon {
+         width: 50%;
+
+    }
 }
 
-/* For small screens, reposition elements to avoid overlap */
-@media (max-width: 740px) {
-    .top-bar-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo-container {
-        position: static;
-        transform: none;
-        order: 1;
-        margin-bottom: 5px;
-    }
-
-    .top-bar-left {
-        order: 2;
-        width: 100%;
-        justify-content: center;
-        margin-bottom: 5px;
-    }
-
-}
