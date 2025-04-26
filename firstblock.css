@@ -6,7 +6,6 @@
 }
 
 .first-block-main {
-    /*display: flex;*/
     flex: 0 0 70%;
 }
 .article-main  {
@@ -14,14 +13,14 @@
 }
 
 .first-block-sidebar{
-    flex: 1; /* Occupa il restante spazio disponibile */
+    flex: 1;
 }
 
 .aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%; /* Imposta l'altezza al 100% */
+    height: 100%;
 }
 .first-block-main h1{
     justify-content: center;
@@ -55,7 +54,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    list-style: none; /* Rimuove i punti dalla lista */
+    list-style: none;
     justify-content: space-between;
     padding: 7px 15px 7px 15px;
     margin: 0;
@@ -167,16 +166,12 @@
     width: 80%;
     height: 150px;
     display: block;
-    /* Aggiungiamo padding per fare spazio agli spostamenti delle immagini */
     padding: 15px 0 0 15px;
-    /* Impostiamo overflow hidden per mantenere tutto all'interno */
-    /* Aggiungiamo box-sizing per includere il padding nelle dimensioni */
     box-sizing: border-box;
 }
 
 .image {
     position: absolute;
-    /* Riduciamo leggermente la larghezza e l'altezza per compensare il padding */
     width: calc(100% - 15px);
     height: calc(100% - 15px);
     transition: all 0.3s ease;
@@ -192,14 +187,12 @@
 .front-image {
     z-index: 2;
     background-color: #ffd700;
-    /* Posizione iniziale nell'angolo in basso a destra del wrapper */
     top: 15px;
     left: 15px;
 }
 
 .back-image {
     z-index: 1;
-    /* Posizione iniziale nell'angolo in alto a sinistra del wrapper */
     top: 0;
     left: 0;
     background-color: #87ceeb;
@@ -208,14 +201,12 @@
 /* Hover states */
 .image-container:hover .front-image {
     z-index: 1;
-    /* Spostiamo l'immagine frontale in alto a sinistra */
     top: 0;
     left: 0;
 }
 
 .image-container:hover .back-image {
     z-index: 2;
-    /* Spostiamo l'immagine posteriore in basso a destra */
     top: 15px;
     left: 15px;
 }
@@ -223,13 +214,6 @@
 .image-container:hover .subtitle {
     opacity: 0;
 }
-
-
-
-
-
-
-
 
 #footer-text-container{
     margin-top: 10px;
@@ -271,6 +255,13 @@
 @media (max-width: 768px) {
     .first-block{
         flex-direction: column;
-
+    }
+    .image-wrapper-covers{
+        width: 35%;
+    }
+}
+@media (max-width: 500px) {
+    .image-wrapper-covers{
+        width: 45%;
     }
 }
