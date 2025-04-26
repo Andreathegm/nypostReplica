@@ -1,57 +1,28 @@
-/* Contenitore principale: sfondo nero, full screen, centrato con flex */
-.nav-bar-container {
-    background-color: black;
-    width: 100%;
-    height: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-/* Inner nav bar */
-.inner-nav-bar-container {
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    display: flex; /* serve per allineare lista */
-    justify-content: center; /* serve per allineare lista */
-    align-items: center;
-}
-
-/* Lista senza pallini */
-.nav-list {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* LI: centrati verticalmente */
-ul.nav-list li {
-    margin: 0 7px;
-    display: flex;
-    align-items: center;
-    height: 100%;
+body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    background-color: white;
 }
 
-ul.nav-list li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
+.page-visual{
+    margin: 2%  200px 0 200px ;
 }
 
-/* Barra '|' tra gli elementi, tranne l’ultimo */
-ul.nav-list li:not(:last-child)::after {
-    content: "|";
-    color: white;
-    margin-left: 10px;
-}
 
-/* Hover */
-ul.nav-list li a:hover {
-    text-decoration: underline;
+/* Main content */
+.main-content {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+@media (max-width: 768px) {
+    .page-visual{
+        margin: 2% 1% 0 1%
+    }
 }

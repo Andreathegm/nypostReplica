@@ -2,16 +2,15 @@
     background-color: orange;
     color: white;
     display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .breaking-label {
-    display: flex;
-    justify-content: center;
-    flex: 0 0 30%;
-    padding: 0 60px 0 30px   ;
+    width: 30%;
+    text-align: center;
     font-weight: bold;
-    white-space: nowrap;
     background: black;
     clip-path: polygon(
             0% 0%,
@@ -22,9 +21,15 @@
 }
 
 .breaking-content {
-    display: flex;
+    width: 70%;
     align-items: center;
     justify-content: center;
-    white-space: nowrap;
-    flex: 1
 }
+@media (max-width: 765px) {
+
+    .breaking-label {
+        clip-path: none;
+    }
+
+}
+
