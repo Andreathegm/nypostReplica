@@ -1,7 +1,7 @@
 .footer-site{
     margin-top: 2rem;
-    padding : 2rem 2rem 0 2rem;
-    border-top : red 2px solid
+    padding : 2rem 7rem 0 7rem;
+    border-top : red 4px solid
 }
 #footer-logo-container{
     width: 30%;
@@ -17,12 +17,41 @@
 #footer-top{
     height:2rem;
 }
-.footer-bottom-nav{
+
+/*FOOTER-NAV-MAIN*/
+.footer-nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin: 2rem
 }
+.footer-grid-referrals{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 1rem;
+}
+
+
+
+.footer-bottom-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.footer-bottom-nav li{
+    padding: 0 1rem;
+}
+
 .footer-bottom-site div{
-    margin : 3rem
+    margin : 0.5rem 3rem 0 3rem
+}
+
+.bordered-item{
+    border-right: 1px solid black;
+}
+
+#rights-container{
+    margin-top: 1rem;
+    text-align: center;
 
 }
