@@ -31,6 +31,13 @@
     margin: 0 10px;
 }
 
+#social-icons-list-first-block{
+    border-bottom: 2px solid black;
+    border-top : 2px solid black;
+}
+
+
+/*DIV COLORS*/
 .instagram-container{
     background: radial-gradient(circle at 30% 107%,
     #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -51,20 +58,16 @@
 .email-container{
     background: #C60800
 }
-.email-container img{
-    width: 70%;
-    height: 50%;
-}
+
 
 .youtube-container{
     background : #FF0000
 }
-
 .youtube-container img{
     width: 70%;
     height: 50%;
 }
-#social-icons-list-first-block{
-    border-bottom: 2px solid black;
-    border-top : 2px solid black;
+.email-container img{
+    width: 70%;
+    height: 50%;
 }
