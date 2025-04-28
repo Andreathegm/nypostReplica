@@ -1,0 +1,125 @@
+.top-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    background-color: #C60800;
+}
+
+.logo-container {
+    width: 80%;
+    height: 100%;
+    justify-items: left;
+}
+
+.logo_image_wrapper{
+    margin-left: 15%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_image_wrapper img{
+    width: 100%;
+    height: 80%;
+    min-width: 250px;
+    min-height: 30px;
+}
+
+
+/*TOP BAR LEFT SECTION*/
+.top-bar-left {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 2px 0 0;
+}
+
+.section-wrapper{
+    display: flex;
+    border: 2px solid white;
+}
+
+.section-wrapper h6{
+    padding: 5px 10px 7.5px 10px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.icon-btn span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#mail{
+    background-image: url('https://nypost.com/wp-content/themes/gtf/client/build/media/email-solid-72c3f17b721401de646d.svg');
+    margin-top: 5px;
+}
+
+#search-glass{
+    background-image: url('images/search_glass.png');
+}
+
+#menu{
+    background-image : url('images/choice_menu.png');')
+}
+
+@media (max-width: 768px) {
+
+    .icon-btn span {
+        width: 18px;
+        height: 18px;
+    }
+
+    .section-wrapper{
+        height: 24px;
+    }
+
+    .top-bar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container {
+        width: 100%;
+        position: static;
+        transform: none;
+        order: 1;
+        margin-bottom: 5px;
+        justify-items: center;
+    }
+
+    .logo_image_wrapper{
+        margin-left : 0;
+    }
+
+    .top-bar-left {
+        order: 2;
+        width: 50%;
+        justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
