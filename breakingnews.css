@@ -1,18 +1,25 @@
 .breaking-news {
+    min-width: 148px;
+    max-height: 37px;
     background-color: #FAD734;
     display: flex;
-    align-items: flex-start; /* Cambiato da center a flex-start */
-    flex-wrap: wrap; /* Permette ai figli di andare su più righe */
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.breaking-news div{
+
+    font-size: 1.1cqw;
+    font-weight:bold;
+
 }
 
 .breaking-label {
-    min-width: 120px; /* Larghezza minima invece di percentuale */
-    max-width: 30%; /* Larghezza massima */
+    min-width: 150px;
     text-align: center;
-    font-weight: bold;
     color: white;
     background: black;
-    padding: 8px 45px; /* Aggiunto padding per spazio interno */
+    padding: 10px 45px;
     clip-path: polygon(
             0% 0%,
             100% 0%,
@@ -22,13 +29,10 @@
 }
 
 .breaking-content {
-    flex: 1; /* Prende lo spazio rimanente */
-    padding: 8px 15px; /* Aggiunto padding */
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight:bold;
-    font-size: smaller;
 }
 
 @media (max-width: 1160px) {
@@ -36,33 +40,21 @@
         align-items: center;
     }
 }
-@media (max-width: 920px) {
-
-    .breaking-news {
-        flex-direction: column;
-    }
-
-    .breaking-label {
-        clip-path: none;
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 5px;
-    }
-
-    .breaking-content {
-        width: 100%;
-    }
-}
 
 @media (max-width: 768px) {
     .breaking-news{
-        margin-top:20px
+        margin:auto;
+    }
+    .breaking-news div{
+        font-size: 1.8cqw;
     }
 
 }
-@media (max-width: 600px) {
-    .breaking-news{
-        max-width: 75%;
-        margin: 20px auto auto;
+@media (max-width: 425px) {
+
+    .breaking-news div{
+        font-size: 2.5cqw;
+
     }
+
 }

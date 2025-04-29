@@ -9,7 +9,6 @@
 }
 .third-block h2{
     margin-bottom: 2%;
-    font-size: 2.34cqw;
 }
 
 .third-block-main-section {
@@ -37,8 +36,6 @@
 .third-block p{
     margin-top: 3%;
     padding-bottom: 4%;
-    font-size: 1cqw;
-    font-weight: bold;
 }
 
 .third-block-aside-module:last-child {
@@ -47,7 +44,6 @@
 
 
 .third-block-image-wrapper {
-
     width: 100%;
 }
 
@@ -66,8 +62,18 @@
     .third-block{
         flex-direction: column;
     }
-    .third-block p{
-        font-size: 2cqw;
+    .third-block-main-section {
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+    .third-block-aside-section {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .third-block-aside-module {
+        padding: 2.5%;
+        width: 50%;
+        border-bottom: none;
     }
 
 }
