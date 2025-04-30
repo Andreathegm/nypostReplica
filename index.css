@@ -25,7 +25,6 @@ p {
     margin: 2%  150px 0 150px ;
 }
 
-
 .main-content {
     margin-top: 2rem;
     display: flex;
@@ -33,15 +32,51 @@ p {
 
 }
 
+/*CODE TO CONTROL HEADERS THAT APPEAR WITH THICK LEFT SHADOW AND LINES AROUND*/
+.stylus-header-wrapper{
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center
+}
+.horizontal-line{
+    flex: 1;
+    height: 3px;
+    background-color: black;
+}
+
+.stylus-header{
+    /*display: inline-block;*/
+    width: 100%;
+    height: 100%;
+    min-height: 60px;
+    background: black;
+    border:3.5px solid white;
+    box-shadow: -1px 1px 0 black,
+    -2px 2px 0 black,
+    -3px 3px 0 black,
+    -4px 4px 0 black,
+    -5px 5px 0 black,
+    -6px 6px 0 black,
+    1px -1px 0 rgba(0, 0, 0, .15);
+    transform: skew(-10deg);
+    color: white;
+    text-align: center;
+}
 @media(max-width: 900px){
- .page-visual{
-    margin: 2% 5% 0 5%  ;
- }
+    .page-visual{
+        margin: 2% 5% 0 5%  ;
+    }
 
 }
 
 @media (max-width: 768px) {
     .page-visual{
-        margin: 2% 5% 0 5%
+        margin: 2% 5vw 0 5vw;
+    }
+}
+@media(min-width: 1440px){
+    .horizontal-line{
+        height : 5px;
     }
 }

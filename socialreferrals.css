@@ -15,20 +15,28 @@
 .social-icons-list div{
     height: 30px;
     width: 30px;
+    align-items: stretch;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     border-radius: 100%;
 
 }
+.social-icons-list li{
+    width: 13%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .social-icons-list{
+    padding: 2% 0;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
-    padding: 7px 15px 7px 15px;
-    margin: 0 10px;
 }
 
 #social-icons-list-first-block{

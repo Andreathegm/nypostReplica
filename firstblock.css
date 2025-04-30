@@ -1,12 +1,20 @@
+/*CODE STYLE FOR TOP PART AND CONTAINERS AND RELATED SUB-PARTS*/
 .first-block {
     display: flex;
     width: 100%;
-    gap: 20px ;
+    gap: 4% ;
 }
 
 .first-block-main {
     flex: 0 0 70%;
 }
+
+.first-block-main h1{
+    justify-content: center;
+    text-align: center;
+    color: #C60800;
+}
+
 .article-main  {
     text-align: center;
 }
@@ -19,23 +27,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
 }
-.first-block-main h1{
-    justify-content: center;
-    text-align: center;
+/*Code style THIS stylus header */
+#main-header-cover-section-wrapper{
+    margin-top: 3vh;
+}
+#main-header-cover-section{
+    min-height: 40px;
+    border: 2px solid black;
     color: #C60800;
+    background-color: white;
+
 }
 
-.logo-container-wrapper {
-    position: relative;
-    width: 300px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/*CODE TO STYLE THE SWAPPING IMAGES AND HIS NEAREST SURROUNDINGS*/
 .cover-logo-wrapper{
     margin : 20px 0 0 0 ;
     width: 100%;
@@ -44,45 +49,16 @@
     align-items: center;
 }
 
-.horizontal-line {
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    top: 50%;
-}
-.inner-logo-wrapper{
-    position: relative;
-    background-color: white;
-    padding: 10px 20px;
-    border: 3px solid black;
-    width: 50%;
-}
 
-.inner-logo-wrapper::after {
-    content: '';
-    position: absolute;
-    top: 4px;
-    left: -8px;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index: -1;
-}
-
-.inner-logo-wrapper h2 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    color: #d10000;
-}
 .today-cover{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+
+
 .today-cover h3{
     margin-top : 10px;
     text-align: center;
