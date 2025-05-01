@@ -4,6 +4,8 @@
     border-top : #C60800 4px solid
 }
 #footer-logo-container{
+    max-width: 450px;
+    min-width: 108px;
     width: 30%;
     height: 100%
 }
@@ -95,6 +97,10 @@
     #footer-logo-container img{
         padding: 7px 3%
     }
+    #social-icon-list-footer div{
+        width: 20px;
+        height: 20px;
+    }
 
 }
 @media (max-width: 600px) {
@@ -102,9 +108,4 @@
         width: 70%;
     }
 }
-@media (max-width: 390px) {
-    #social-icon-list-footer div{
-        width: 20px;
-        height: 20px;
-    }
-}
+
