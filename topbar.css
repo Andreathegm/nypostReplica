@@ -54,6 +54,12 @@
     justify-content: center;
     align-items: center;
 }
+#page-six-phrase-container{
+    color: white;
+    font-weight: 900;
+    transform: scale(1.2, 2);
+    letter-spacing: -1.1px;
+}
 
 /*TOP BAR LEFT SECTION*/
 .top-bar-left {
@@ -108,8 +114,19 @@
 #menu{
     background-image : url('images/choice_menu.png');')
 }
+.section-wrapper:hover{
+    background: white;
+    border: 2px solid black;
+}
 
+.section-wrapper:hover div{
+    color: black;
+    font-weight: bold;
+}
 @media (max-width: 768px) {
+    #page-six-redirect-container{
+        display: none;
+    }
 
     .icon-btn span {
         width: 18px;
