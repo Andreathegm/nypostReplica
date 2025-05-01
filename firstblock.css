@@ -30,14 +30,21 @@
 }
 /*Code style THIS stylus header */
 #main-header-cover-section-wrapper{
-    margin-top: 3vh;
+    margin: 3vh 0;
 }
 #main-header-cover-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
     min-height: 40px;
     border: 2px solid black;
     color: #C60800;
     background-color: white;
 
+}
+#inner-logo-wrapper{
+    max-width: 190px;
 }
 
 /*CODE TO STYLE THE SWAPPING IMAGES AND HIS NEAREST SURROUNDINGS*/
@@ -65,7 +72,7 @@
 }
 
 #footer-container{
-    margin-top: 20px;
+    margin-top: 4vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,11 +161,10 @@
 }
 
 #footer-text-container{
-    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 5px 0 5px
+    padding-left: 5px;
 }
 
 @media (max-width: 768px) {
