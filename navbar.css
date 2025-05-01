@@ -1,4 +1,5 @@
 .nav-bar-container {
+    min-height: 33px;
     background-color: black;
     width: 100%;
     height: 5vh;

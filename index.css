@@ -100,7 +100,7 @@ p {
     color: white;
     text-align: center;
 }
-@media(max-width: 900px){
+@media(max-width: 980px){
     .page-visual{
         margin: 2% 5% 0 5%  ;
     }
