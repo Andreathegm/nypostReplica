@@ -1,0 +1,123 @@
+.sport-plus-container {
+    width: 100%;
+    margin-top: 25px;
+    background-color:#FFD62B ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 5px;
+    gap: 15px;
+}
+.sport-plus-container h3,h4{
+    all:revert;
+    text-align: center;
+}
+.sport-section-header{
+    font-size: 19px;
+    font-weight: bold;
+}
+.sport-plus-icon{
+    width: 100%;
+    height: 100px;
+}
+#sport-plus-logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: -2px;
+    -webkit-text-stroke: 2px black;
+    text-shadow:
+             0 1px 1px black,
+            -1px 2px 1px black,
+            -2px 3px 1px black,
+            -3px 4px 2px black,
+            -4px 5px 2px black,
+            -5px 6px 3px black,
+            -6px 7px 4px rgba(0, 0, 0, 0.8),
+            1px -1px 1px rgba(0, 0, 0, .15);
+
+    padding: 10px 20px;
+}
+.sport-plus-header-link{
+    width: 100%;
+    text-decoration: none;
+}
+.sport-plus-header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sport-plus-main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px 15px 10px;
+    background-color: white;
+}
+.sport-plus-footer-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.sport-plus-footer-link{
+    width: 100%;
+}
+.sport-plus-list{
+    width: 100%;
+}
+.sport-plus-item{
+    width: 100%;
+    list-style: none;
+    margin: 15px 0 28px 0 ;
+}
+.sport-plus-item-wrapper{
+    padding: 20px 0;
+    border-top: 4px solid black;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.sport-plus-image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+.name-item-link{
+    color: red;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+#sport-plus-button{
+    padding: 9px 20px;
+    background-color:  #C60800;
+    border: none;
+    border-radius: 5px;
+}
+#sport-plus-button>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.sport-plus-footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sport-plus-text-link-log-in{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#sport-plus-text-link-log-in:hover{
+    color: #C60800;
+}
+#sport-plus {
+    text-align: center;
+}
