@@ -11,7 +11,12 @@
 }
 .sport-plus-container h3,h4{
     all:revert;
+}
+.sport-plus-container h3{
     text-align: center;
+}
+.sport-plus-container h4{
+    text-align: left;
 }
 .sport-section-header{
     font-size: 19px;
@@ -96,9 +101,13 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    width: 79px;
+    height: auto;
+    object-fit: cover;
 
 }
 .name-item-link{
+    font-size: 0.8rem;
     color: #C60800;
     font-weight: bold;
     width: 100%;
@@ -121,6 +130,7 @@
     justify-content: center;
 }
 #sport-plus-text-link-log-in{
+    text-align: center;
     text-decoration: none;
     color: black;
     font-weight: bold;
