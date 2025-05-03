@@ -1,6 +1,6 @@
 .sport-plus-container {
     width: 100%;
-    margin-top: 25px;
+    margin-top: 50px;
     background-color:#FFD62B ;
     display: flex;
     flex-direction: column;
@@ -32,27 +32,18 @@
         border-left: 10px solid black;
 
 }
+.sport-plus-cta:hover{
+    color: red;
+}
+.sport-plus-cta:hover::after{
+    border-left: 10px solid red;
+}
+
 .sport-plus-icon{
     width: 100%;
     height: 100px;
 }
 #sport-plus-logo{
-    font-size: 35px;
-    font-weight: bold;
-    color: white;
-    letter-spacing: -2px;
-    -webkit-text-stroke: 2px black;
-    text-shadow:
-             0 1px 1px black,
-            -1px 2px 1px black,
-            -2px 3px 1px black,
-            -3px 4px 2px black,
-            -4px 5px 2px black,
-            -5px 6px 3px black,
-            -6px 7px 4px rgba(0, 0, 0, 0.8),
-            1px -1px 1px rgba(0, 0, 0, .15);
-
-    padding: 10px 20px;
 }
 .sport-plus-header-link{
     width: 100%;
@@ -92,7 +83,7 @@
 }
 .sport-plus-item-wrapper{
     padding: 20px 0;
-    border-top: 4px solid black;
+    border-top: 6px solid black;
     position: relative;
     width: 100%;
     border-bottom: 1px solid black;
@@ -101,8 +92,8 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 79px;
-    height: auto;
+    width: 80px;
+    height: 78px;
     object-fit: cover;
 
 }
