@@ -11,6 +11,7 @@
 }
 .sport-plus-container h3,h4{
     all:revert;
+    color:black;
 }
 .sport-plus-container h3{
     text-align: center;
@@ -21,6 +22,10 @@
 .sport-section-header{
     font-size: 19px;
     font-weight: bold;
+}
+.sport-plus-cta{
+    font-weight: bold;
+    color: black;
 }
 .sport-plus-cta::after{
         content: "";
@@ -43,9 +48,14 @@
     width: 100%;
     height: 100px;
 }
+
 #sport-plus-logo{
+    width: 60%;
 }
 .sport-plus-header-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     text-decoration: none;
 }
@@ -95,20 +105,28 @@
     width: 80px;
     height: 78px;
     object-fit: cover;
+    pointer-events: none;
 
 }
 .name-item-link{
+    display: block;
     font-size: 0.8rem;
     color: #C60800;
     font-weight: bold;
     width: 100%;
     height: 100%;
+
 }
-#sport-plus-button{
+#sport-plus-fake-button{
+    font-weight: bold;
+    color: white;
     padding: 9px 20px;
     background-color:  #C60800;
     border: none;
     border-radius: 5px;
+}
+#sport-plus-fake-button:hover{
+    background-color:  #E13131;
 }
 #sport-plus-button>a{
     text-decoration: none;

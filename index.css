@@ -57,7 +57,7 @@ p {
 }
 
 .text-extra-small {
-    font-size: clamp(0.6rem, 1.5vw, 0.7rem);
+    font-size: clamp(0.69rem, 1.5vw, 0.7rem);
     font-weight: normal;
 }
 
