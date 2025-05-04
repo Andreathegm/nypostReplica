@@ -1,33 +1,39 @@
 /*CODE STYLE FOR TOP PART AND CONTAINERS AND RELATED SUB-PARTS*/
-.first-block {
-    display: flex;
-    width: 100%;
-    gap: 4% ;
-}
+/*.first-block {*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    gap: 4% ;*/
+/*}*/
 
-.first-block-main {
+.page-content-main{
     flex: 0 0 70%;
 }
 
-.first-block-main h1{
+.page-content-side{
+    flex: 1;
+}
+.page-content-main h1{
     justify-content: center;
     text-align: center;
     color: #C60800;
 }
 
-.article-main  {
+.first-block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     text-align: center;
 }
 
-.first-block-sidebar{
-    flex: 1;
+.story-flags{
+
 }
 
-.aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/*.aside {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
 /*Code style THIS stylus header */
 #main-header-cover-section-wrapper{
     margin: 3vh 0;
@@ -63,8 +69,6 @@
     justify-content: center;
     align-items: center;
 }
-
-
 
 .today-cover h3{
     margin-top : 10px;
@@ -174,7 +178,7 @@
     }
 }
 @media (max-width: 768px) {
-    .first-block{
+    .page-content{
         flex-direction: column;
     }
     .image-wrapper-covers{
