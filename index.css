@@ -43,12 +43,22 @@ a {
 
 .red-background-story-flags{
     font-size: 0.8125rem;
-    padding: 4px;
+    padding: 0.25rem;
     font-weight: bold;
     color: white;
     transform: skew(-10deg);
     background-color: #C60800;
 }
+.white-background-story-flags{
+    font-size: 0.8125rem;
+    padding: 0.25rem;
+    font-weight: bold;
+    color:#C60800 ;
+    transform: skew(-10deg);
+    background-color: white;
+    border: 1px solid #C60800;
+}
+
 
 .image-wrapper>img{
     width: 100%;

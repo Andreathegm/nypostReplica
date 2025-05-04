@@ -57,6 +57,9 @@
 .fourth-block-container .image-wrapper>img {
     display: block;
 }
+.fourth-block-container .container-flex-start-no-gap{
+    margin-top: 0.625rem
+}
 @media (max-width: 768px) {
     .fourth-block-left,.fourth-block-center,.fourth-block-right {
         width: 100%;

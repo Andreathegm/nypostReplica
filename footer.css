@@ -20,6 +20,7 @@
 #footer-wrapper-socialreferrals{
     width: 70%;
 }
+
 #footer-top{
     height:2rem;
 }
@@ -33,10 +34,10 @@
     gap: 3vw
 }
 
-.footer-nav li span{
+.footer-nav span{
    font-weight: bold;
     text-transform: uppercase;
-    font-size: clamp(0.5rem, 1cqw, 4rem);
+    font-size: 0.75rem
 
 
 }

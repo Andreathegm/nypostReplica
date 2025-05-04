@@ -29,6 +29,9 @@
 }
 
 .third-block-aside-module {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
     margin: 5% 0 ;
     border-bottom: 1px solid black;
     padding-bottom: 1.25rem;
@@ -46,7 +49,10 @@
 .third-block-main-section .image-wrapper{
     width: 100%;
 }
-
+.third-block .white-background-story-flags{
+    text-align: center;
+    margin-top: 0.625rem;
+}
 
 
 #third-block-main-image-wrapper {
