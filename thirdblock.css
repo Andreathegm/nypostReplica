@@ -78,3 +78,17 @@
     }
 
 }
+@media(max-width:425px){
+    .third-block-aside-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .third-block-aside-module {
+        width: 80%;
+    }
+    .third-block{
+        border-bottom: none;
+    }
+
+
+}
