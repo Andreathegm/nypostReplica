@@ -55,17 +55,7 @@
     /*overflow: hidden;*/
 }
 
-.contenitore-immagine {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-
-.contenitore-immagine img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.fourth-block-container .image-wrapper>img {
     display: block;
 }
 @media (max-width: 768px) {
