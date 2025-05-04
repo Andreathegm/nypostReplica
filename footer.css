@@ -51,7 +51,7 @@
 }
 .footer-grid-referrals li{
     text-transform: uppercase;
-    font-size: clamp(0.5rem, 1cqw, 4rem);
+    font-size: 0.6875rem;
 
 }
 
@@ -74,7 +74,7 @@
 }
 
 .footer-bottom-nav li a{
-    font-size: clamp(0.5rem, 1cqw, 4rem);
+    font-size: 0.6875rem;
 }
 
 .footer-bottom-site div{
@@ -87,11 +87,16 @@
 
 
 #rights-container{
-    font-size: clamp(0.5rem, 1cqw, 4rem);
+    font-size: 0.6875rem;
     font-weight: bold;
     margin: 1rem;
     text-align: center;
 
+}
+@media(max-width: 1200px){
+    .footer-grid-referrals{
+        display: block ;
+    }
 }
 @media (max-width: 768px) {
     .footer-grid-referrals{
@@ -110,6 +115,15 @@
 @media (max-width: 600px) {
     #footer-wrapper-socialreferrals {
         width: 70%;
+    }
+}
+@media(max-width: 510px){
+    .footer-nav>li{
+        padding-left: 25%;
+    }
+    .footer-nav{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
