@@ -1,5 +1,6 @@
 .second-block{
     border-top: 1px solid black;
+    border-bottom: 1px solid black;
     margin-top: 3vh;
     display: flex;
     width: 100%;

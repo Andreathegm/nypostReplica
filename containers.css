@@ -7,5 +7,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
+}
+.container-flex-start-no-gap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }

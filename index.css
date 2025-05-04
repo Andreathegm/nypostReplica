@@ -42,15 +42,12 @@ a {
 }
 
 .red-background-story-flags{
-    transform: skew(-10deg);
-    background-color: #C60800;
-
-}
-.red-background-story-flags{
     font-size: 0.8125rem;
     padding: 4px;
     font-weight: bold;
     color: white;
+    transform: skew(-10deg);
+    background-color: #C60800;
 }
 
 .image-wrapper>img{
