@@ -66,6 +66,19 @@ a {
     object-fit: cover;
 
 }
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.footer-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
 /*CODE TO CONTROL HEADERS THAT APPEAR WITH THICK LEFT SHADOW AND LINES AROUND*/
 .stylus-header-wrapper{
     display: flex;

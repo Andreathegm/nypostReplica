@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="thirdblock.css">
     <link rel="stylesheet" href="fourthblock.css">
     <link rel="stylesheet" href="sportsplus.css">
+    <link rel="stylesheet" href="horoscope.css">
 </head>
 
 
@@ -484,8 +485,7 @@
                             <ul id="social-icons-list-first-block" class="social-icons-list">
                                 <li><div  class= "facebook-container"><a href="#" class="social-icon"><img alt="facebook.com" src="/social_logos/facebook.png"></a></div></li>
                                 <li><div class= "X-container"><a href="#" class="social-icon"><img alt="X.com" src="/social_logos/X_logo_2023_(white).png"></a></div></li>
-                                <li><div class="instagram-container"><a href="#" class="social-icon"><img alt="instagram.com" src="/social_logos/instagram_logo.png"></a></div></li>
-                                <li><div class= "linkedin-container"><a href="#" class="social-icon"><img alt="linkedin.com" src="/social_logos/linkedin.jpg"></a></div></li>
+                                <li><div class="instagram-container"><a href="#" class="social-icon"><img alt="instagram.com" src="/social_logos/instagram_logo.png"></a></div></li><li><div class= "linkedin-container"><a href="#" class="social-icon"><img alt="linkedin.com" src="/social_logos/linkedin.jpg"></a></div></li>
                                 <li><div class= "email-container"><a href="#" class="social-icon"><img alt="email.com" src=https://nypost.com/wp-content/themes/gtf/client/build/media/email-solid-72c3f17b721401de646d.svg></a></div></li>
                                 <li><div class= "youtube-container"><a href="#" class="social-icon"><img alt="youtube.com" src="/social_logos/youtube.png"></a></div></li>
                             </ul>
@@ -527,9 +527,9 @@
                                 </div>
 
 
-                                <div id="footer-container">
+                                <div id="cover-footer-container" class="footer-container">
                                     <div class="horizontal-line"></div>
-                                        <div id="footer-text-container"><b>BROWSE</b>
+                                        <div class="footer-text-container"><b>BROWSE</b>
                                             <span class="arrow-wrapper">
                                               <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewBox="0 0 7 10" aria-hidden="true">
                                                 <path d="M1.093 10 L0 8.668 L4.334 5 L0 1.332 L1.093 0 L7 5 Z" fill="red" />
@@ -542,6 +542,8 @@
 
                             </div>
                         </section>
+
+
 
 
                     <!--SPORTS+ SECTION-->
@@ -642,11 +644,56 @@
 
                         </section>
 
+
+                    <!--HOROSCOPE -->
+                    <section id="horoscope-section">
+                        <h2 id="horoscope-header">
+                            <a>HOROSCOPE</a>
+                        </h2>
+
+                        <h3 id="horoscope-subheader">
+                            <a>
+                                Taurus
+                            </a>
+                        </h3>
+
+                        <div class="container-flex-centered">
+                            <div id="taurus-image-wrapper" class="image-wrapper">
+                                <img src="https://picsum.photos/seed/taurus/140/140"
+                                     alt="Image with taurus seed from Picsum">
+                            </div>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel mattis velit,
+                            vitae sodales mauris. Integer sodales velit mi, maximus posuere nisl condimentum ac.
+                            Pellentesque congue felis id quam sagittis hendrerit. Integer justo ex, finibus vel
+                            nibh vitae, suscipit aliquet leo. Proin lacinia ligula a odio convallis sodales.
+                        </p>
+
+
+                        <div id="horoscope-footer-container" class="footer-container">
+                            <div class="horizontal-line"></div>
+                            <div id="horoscope-footer-text-container" class="footer-text-container"><b>ALL HOROSCOPE</b>
+                                <span class="arrow-wrapper">
+                                              <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewBox="0 0 7 10" aria-hidden="true">
+                                                <path d="M1.093 10 L0 8.668 L4.334 5 L0 1.332 L1.093 0 L7 5 Z" fill="red" />
+                                              </svg>
+                                            </span>
+                            </div>
+                            <div class="horizontal-line"></div>
+                        </div>
+
+                    </section>
+
+
+
+
                 </aside>
             </div>
         </div>
 <!--site's footer-->
-<div class="footer-site">
+<footer class="footer-site">
 
     <div id="footer-top" class="container-flex-start">
         <div id="footer-logo-container">
@@ -671,20 +718,20 @@
             <li>
                 <span>Nulla</span>
                 <ul class="footer-grid-referrals">
-                    <li>ornare</li>
-                    <li>tempor</li>
-                    <li>pulvinar</li>
-                    <li>tempor</li>
+                    <li><a href="#">ornare</a></li>
+                    <li><a href="#">tempor</a></li>
+                    <li><a href="#">pulvinar</a></li>
+                    <li><a href="#">tempor</a></li>
                 </ul>
             </li>
 
             <li>
                 <span>Integer</span>
                 <ul class="footer-grid-referrals">
-                    <li>Pellentesque</li>
-                    <li>nec</li>
-                    <li>pellentesque</li>
-                    <li>portittor</li>
+                    <li><a href="#">Pellentesque</a></li>
+                    <li><a href="#">nec</a></li>
+                    <li><a href="#">pellentesque</a></li>
+                    <li><a href="#">portittor</a></li>
                 </ul>
 
             </li>
@@ -692,30 +739,30 @@
             <li>
                 <span>quis</span>
                 <ul class="footer-grid-referrals">
-                    <li>metus</li>
-                    <li>risus</li>
-                    <li>praesent</li>
-                    <li>ac</li>
+                    <li><a href="#">metus</a></li>
+                    <li><a href="#">risus</a></li>
+                    <li><a href="#">praesent</a></li>
+                    <li><a href="#">ac</a></li>
                 </ul>
             </li>
 
             <li>
                 <span>dictum</span>
                 <ul class="footer-grid-referrals">
-                    <li>sit</li>
-                    <li>amet</li>
-                    <li>facilisis</li>
-                    <li>aenean</li>
+                    <li><a href="#">sit</a></li>
+                    <li><a href="#">amet</a></li>
+                    <li><a href="#">facilisis</a></li>
+                    <li><a href="#">aenean</a></li>
                 </ul>
             </li>
 
             <li>
                 <span>tincidunt</span>
                 <ul class="footer-grid-referrals">
-                    <li>risus</li>
-                    <li>placerat</li>
-                    <li>nisl</li>
-                    <li>vel</li>
+                    <li><a href="#">risus</a></li>
+                    <li><a href="#">placerat</a></li>
+                    <li><a href="#">nisl</a></li>
+                    <li><a href="#">vel</a></li>
                 </ul>
             </li>
 
@@ -732,10 +779,10 @@
         <div id="footer-bottom-nav-wrapper">
             <nav>
                 <ul class="footer-bottom-nav">
-                    <li class="bordered-item"><a>nisl</a></li>
-                    <li class="bordered-item"><a>tincidunt</a></li>
-                    <li class="bordered-item"><a>quis</a></li>
-                    <li><a>amet</a></li>
+                    <li class="bordered-item"><a href="#">nisl</a></li>
+                    <li class="bordered-item"><a href="#">tincidunt</a></li>
+                    <li class="bordered-item"><a href="#">quis</a></li>
+                    <li><a href="#">amet</a></li>
                 </ul>
             </nav>
         </div>
@@ -746,7 +793,7 @@
 
     </div>
 
-</div>
+</footer>
 <!--<script src="promo-grid.js"></script>-->
 <script src="invertimages.js"></script>
 </body>
