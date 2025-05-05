@@ -1,15 +1,14 @@
-/*CODE STYLE FOR TOP PART AND CONTAINERS AND RELATED SUB-PARTS*/
-/*.first-block {*/
-/*    display: flex;*/
-/*    width: 100%;*/
-/*    gap: 4% ;*/
-/*}*/
-
 .page-content-main{
     flex: 0 0 70%;
+    display: flex;
+    flex-direction: column;
+    gap : 3.125rem;
 }
 
 .page-content-side{
+    display: flex;
+    flex-direction: column;
+    gap : 3.125rem;
     flex: 1;
 }
 .page-content-main h1{
@@ -167,7 +166,7 @@
         height: 200px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 957px) {
     .page-content{
         flex-direction: column;
     }

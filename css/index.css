@@ -118,7 +118,11 @@ a {
     color: white;
     text-align: center;
 }
-
+@media(max-width: 1300px){
+}
+    .page-visual{
+        margin: 2% 5% 0 5%  ;
+    }
 @media(max-width: 980px){
     .page-visual{
         margin: 2% 5% 0 5%  ;

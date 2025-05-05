@@ -39,6 +39,7 @@
 
 .trending-section-module{
     border-bottom: 1px solid #E5E5E5;
+    padding: 1.5rem 0
 }
 .trending-section-module:last-child{
     border-bottom: none;
@@ -63,4 +64,9 @@
 #trending-section .container-flex-end>a:hover,#trending-section .container-flex-end>a:hover::after{
     color: #C60800;
     border-left-color: #C60800;
+}
+
+.trending-section-module .image-wrapper{
+    max-width: 95px;
+    max-height: 65px;
 }

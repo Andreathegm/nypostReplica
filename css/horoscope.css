@@ -3,10 +3,13 @@
     flex-direction: column;
     margin-top: 1.25rem;
     border-top: 2px solid black;
-    gap: 0.9375rem;
+    gap: 1.25rem;
+}
+#horoscope-section p{
+    padding: 0 0.9375rem;
 }
 #horoscope-header{
-    padding : 0.1rem;
+    padding : 0.25rem;
     font-weight: bold;
     border-bottom: 1px solid gray;
 }
