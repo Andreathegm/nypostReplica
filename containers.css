@@ -9,6 +9,10 @@
     align-items: center;
     gap: 0.625rem;
 }
+.container-flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
 .container-flex-start-no-gap{
     display: flex;
     justify-content: flex-start;
