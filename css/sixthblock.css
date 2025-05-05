@@ -1,0 +1,43 @@
+#sixth-block-content {
+    display: flex;
+    gap: 1.25rem;
+}
+#sixth-block .image-wrapper{
+    position: relative;
+}
+.play-button-symbol{
+    position: absolute;
+    bottom: 0.3125rem;
+    left: 0.3215rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #C60800;
+    border-radius: 50%;
+
+}
+.sixth-block-module{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.625rem;
+}
+#sixth-block-right-side{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+}
+#sixth-block-main{
+    width: 50%;
+}
+
+#sixth-block-right-side .image-wrapper,.video-wrapper{
+    width: 144px;
+    height: 96px;
+}
+
