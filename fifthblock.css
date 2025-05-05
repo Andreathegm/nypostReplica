@@ -1,0 +1,26 @@
+.fifth-block{
+    display: flex;
+    width: 100%;
+}
+.fifth-block-main{
+    width: 55%;
+}
+.fifth-block-right-side{
+    width: 45%;
+    padding: 1.25rem 0.625rem;
+
+}
+.fifth-block-inner-right-side{
+    border: 3px solid black;
+
+}
+#fifth-block-header-right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    min-height: 40px;
+    border: 2px solid black;
+    color: #C60800;
+    background-color: white;
+}
