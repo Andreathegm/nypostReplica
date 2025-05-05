@@ -48,6 +48,10 @@
     color: #C60800;
     background-color: white;
 }
+.fifth-block-inner-right-side h3{
+    padding : 0.625rem 0;
+
+}
 .fifth-block-inner-right-side .red-footer-text-container,.arrow-wrapper{
     display: inline-flex;
     align-items: center;

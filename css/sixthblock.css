@@ -1,5 +1,5 @@
 #sixth-block {
-    margin: 2.5rem 0;
+    margin : 2.5rem 0;
 }
 #sixth-block h3{
     margin-top: 0.625rem;
@@ -54,7 +54,15 @@
     height: 96px;
 }
 @media (max-width: 665px){
+    #sixth-block-main{
+        width: 100%;
+    }
+    #sixth-block-right-side{
+        width: 100%;
+        gap: 1.25rem;
+    }
     #sixth-block-content{
+        gap: 2.50rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
