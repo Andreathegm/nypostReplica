@@ -1,4 +1,8 @@
+#sixth-block-header{
+    border-bottom: 1px solid #EDEDED;
+}
 #sixth-block-content {
+    margin-top: 1.25rem;
     display: flex;
     gap: 1.25rem;
 }
