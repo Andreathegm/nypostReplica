@@ -57,3 +57,17 @@
 .bottom-border-item{
     border-bottom: 1px solid gray;
 }
+
+@media (max-width: 665px) {
+
+    .fifth-block{
+        flex-direction: column;
+    }
+    .fifth-block-main-wrapper{
+        border-right: none;
+        width: 100%;
+    }
+    .fifth-block-right-side{
+        width: 100%;
+    }
+}
