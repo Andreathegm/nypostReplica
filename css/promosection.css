@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 3%;
-    padding: 1.5% 2%;
+    padding: 1.125% 2%;
     background-color: white;
     border-bottom: 2px solid black;
 }
@@ -24,6 +24,7 @@
 }
 
 .promo-img {
+    max-width: 80px;
     width: 30%;
     height: auto;
     margin-right: 10px;
