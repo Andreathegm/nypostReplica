@@ -64,4 +64,11 @@
     .fourth-block-left,.fourth-block-center,.fourth-block-right {
         width: 100%;
     }
+    .fourth-block-container{
+        gap: 3.75rem
+    }
+    .fourth-block-module{
+        gap: 1.25rem;
+        margin-bottom: 2.5rem;
+    }
 }
