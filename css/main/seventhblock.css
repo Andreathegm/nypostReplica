@@ -1,0 +1,37 @@
+#seventh-block {
+    width: 100%;
+    margin-bottom: 5.625rem;
+}
+.seventh-block-module{
+    width: 30%;
+}
+
+.seventh-block-module .container-space-between{
+    border-top: 1px solid black;
+    border-bottom: 1px solid #E5E5E5;
+}
+.seventh-block-module h2{
+    padding: 0.1875rem 0;
+    font-size: 1.17em;
+
+}
+.seventh-block-module h3,h4{
+    padding-bottom: 0.625rem;
+    border-bottom: 1px solid #E5E5E5;
+
+}
+
+.seventh-block-module h4:last-of-type {
+    border-bottom: none;
+}
+
+@media(max-width:680px) {
+    #seventh-block {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .seventh-block-module{
+        width: 100%;
+    }
+}
+

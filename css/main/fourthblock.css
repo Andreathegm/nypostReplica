@@ -75,7 +75,7 @@
     }
 
     .fourth-block-container{
-        gap: 3.75rem
+        gap: 2rem
     }
 
     .fourth-block-module,.fourth-block-module-center{
@@ -84,14 +84,17 @@
 
     .fourth-block-left{
         order : 2;
+        border-bottom: 1px solid #EDEDED;
     }
 
     .fourth-block-right{
         order : 3;
+        border-bottom: 1px solid black;
     }
 
     .fourth-block-center{
         order: 1;
+        border-bottom: 1px solid #EDEDED;
     }
 
     .fourth-block-module{
