@@ -1,6 +1,7 @@
 #sixth-block {
     margin : 2.5rem 0;
 }
+
 #sixth-block h3{
     margin-top: 0.625rem;
 }
@@ -10,14 +11,17 @@
     border-bottom: 1px solid #EDEDED;
     border-top: 1px solid #EDEDED;
 }
+
 #sixth-block-content {
     margin-top: 1.25rem;
     display: flex;
     gap: 1.25rem;
 }
+
 #sixth-block .image-wrapper{
     position: relative;
 }
+
 .play-button-symbol{
     position: absolute;
     bottom: 0.3125rem;
@@ -31,12 +35,14 @@
     border-radius: 50%;
 
 }
+
 .sixth-block-module{
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 0.625rem;
 }
+
 #sixth-block-right-side{
     width: 45%;
     display: flex;
@@ -45,6 +51,7 @@
     align-items: center;
     gap: 1.25rem;
 }
+
 #sixth-block-main{
     width: 50%;
 }
@@ -53,6 +60,7 @@
     width: 144px;
     height: 96px;
 }
+
 @media (max-width: 665px) {
     #sixth-block-main {
         width: 100%;
@@ -80,6 +88,7 @@
         text-align: center;
     }
 }
+
 @media (max-width: 530px) {
     #sixth-block-right-side{
         flex-direction: column;

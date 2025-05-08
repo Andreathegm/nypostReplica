@@ -108,11 +108,11 @@
 }
 
 #search-glass{
-    background-image: url('../images/search_glass.png');
+    background-image: url('../../images/search_glass.png');
 }
 
 #menu{
-    background-image : url('../images/choice_menu.png');')
+    background-image : url('../../images/choice_menu.png');')
 }
 .section-wrapper:hover{
     background: white;

@@ -5,23 +5,25 @@
     border-top: 2px solid black;
     gap: 1.25rem;
 }
+
 #horoscope-section p{
     padding: 0 0.9375rem;
 }
+
 #horoscope-header{
     padding : 0.25rem;
     font-weight: bold;
     border-bottom: 1px solid gray;
 }
+
 #horoscope-header a{
     color: #C60800;
-
 }
+
 #horoscope-subheader{
     text-align: center;
-
-
 }
+
 #taurus-image-wrapper{
     width: 8.75rem;
     height: 8.75rem;

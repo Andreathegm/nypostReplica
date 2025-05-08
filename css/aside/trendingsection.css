@@ -5,14 +5,14 @@
 
 #trending-section-main{
     margin-top: 1.25rem;
-
 }
+
 #trending-section>h4{
     display: inline-block;
     position: relative;
     font-weight: bold;
-
 }
+
 .trending-section-module{
     padding: 0.3125rem 0;
     display: flex;
@@ -20,6 +20,7 @@
     align-items: center;
     gap: 1rem;
 }
+
 #trending-section>h4::after{
     content: "";
     position: absolute;
@@ -29,8 +30,8 @@
     background-color: #C60800;
     display: block;
     width: calc(100% + 1.25rem);
-
 }
+
 .thick-underline-left{
     background-color: #C60800;
     max-width: max-content;
@@ -41,15 +42,19 @@
     border-bottom: 1px solid #E5E5E5;
     padding: 1.5rem 0
 }
+
 .trending-section-module:last-child{
     border-bottom: none;
 }
+
 #trending-section .container-flex-end{
     margin-top: 0.625rem;
 }
+
 #trending-section .container-flex-end>a{
     font-weight: bold;
 }
+
 #trending-section .container-flex-end>a::after{
     margin-left: 0.3125rem;
     content: "";

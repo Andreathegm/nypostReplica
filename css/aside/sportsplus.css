@@ -9,24 +9,30 @@
     padding: 15px 5px;
     gap: 15px;
 }
+
 .sport-plus-container h3,h4{
     color:black;
 }
+
 .sport-plus-container h3{
     text-align: center;
 }
+
 .sport-plus-container h4{
     margin-top: 0.625rem;
     text-align: left;
 }
+
 .sport-section-header{
     font-size: 19px;
     font-weight: bold;
 }
+
 .sport-plus-cta{
     font-weight: bold;
     color: black;
 }
+
 .sport-plus-cta::after{
         content: "";
         display: inline-block;
@@ -37,9 +43,11 @@
         border-left: 10px solid black;
 
 }
+
 .sport-plus-cta:hover{
     color: red;
 }
+
 .sport-plus-cta:hover::after{
     border-left: 10px solid red;
 }
@@ -48,6 +56,7 @@
     width: 100%;
     height: 100px;
 }
+
 .sport-plus-header-link{
     display: flex;
     align-items: center;
@@ -55,6 +64,7 @@
     width: 100%;
     text-decoration: none;
 }
+
 .sport-plus-header-container{
     display: flex;
     flex-direction: column;
@@ -62,6 +72,7 @@
     justify-content: center;
     gap: 0.625rem;
 }
+
 .sport-plus-main-container{
     width: 100%;
     display: flex;
@@ -71,23 +82,28 @@
     padding: 20px 10px 15px 10px;
     background-color: white;
 }
+
 .sport-plus-footer-button{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
+
 .sport-plus-footer-link{
     width: 100%;
 }
+
 .sport-plus-list{
     width: 100%;
 }
+
 .sport-plus-item{
     width: 100%;
     list-style: none;
     margin: 15px 0 28px 0 ;
 }
+
 .sport-plus-item-wrapper{
     padding: 20px 0;
     border-top: 6px solid black;
@@ -95,6 +111,7 @@
     width: 100%;
     border-bottom: 1px solid black;
 }
+
 .sport-plus-image{
     position: absolute;
     bottom: 0;
@@ -105,6 +122,7 @@
     pointer-events: none;
 
 }
+
 .name-item-link{
     display: block;
     font-size: 0.8rem;
@@ -114,6 +132,7 @@
     height: 100%;
 
 }
+
 #sport-plus-fake-button{
     font-weight: bold;
     color: white;
@@ -122,31 +141,38 @@
     border: none;
     border-radius: 5px;
 }
+
 #sport-plus-fake-button:hover{
     background-color:  #E13131;
 }
+
 #sport-plus-button>a{
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
+
 .sport-plus-footer-link{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 #sport-plus-text-link-log-in{
     text-align: center;
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
+
 #sport-plus-text-link-log-in:hover{
     color: #C60800;
 }
+
 #sport-plus {
     text-align: center;
 }
+
 @media(max-width:768px){
     #sport-plus-logo{
         width: 60%;

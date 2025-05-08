@@ -29,19 +29,45 @@ a {
     font-weight: normal;
 }
 
+.image-wrapper>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.video-wrapper>video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .page-visual{
     margin: 2% 350px 0 350px;
 }
+
 .footer-site{
     padding: 2% 350px 0 350px;
- }
+}
 
- .page-content {
+.page-content {
     margin-top: 2rem;
     display: flex;
     width: 100%;
     gap: 4% ;
 
+}
+
+.page-content-main{
+    flex: 0 0 70%;
+    display: flex;
+    flex-direction: column;
+    gap : 3.125rem;
+}
+
+.page-content-side{
+    display: flex;
+    flex-direction: column;
+    gap : 3.125rem;
+    flex: 1;
 }
 
 .red-background-story-flags{
@@ -52,6 +78,7 @@ a {
     transform: skew(-10deg);
     background-color: #C60800;
 }
+
 .white-background-story-flags{
     font-size: 0.8125rem;
     padding: 0.25rem;
@@ -62,36 +89,25 @@ a {
     border: 1px solid #C60800;
 }
 
-
-.video-wrapper>video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.image-wrapper>img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
 .footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
+
 .footer-text-container{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 5px;
 }
+
 .red-footer-text-container{
     color: #C60800;
     font-weight: bold;
 }
+
 /*CODE TO CONTROL HEADERS THAT APPEAR WITH THICK LEFT SHADOW AND LINES AROUND*/
 .stylus-header-wrapper{
     display: flex;
@@ -99,6 +115,7 @@ a {
     align-items: center;
     justify-content: center
 }
+
 .horizontal-line{
     flex: 1;
     height: 2px;
@@ -121,6 +138,7 @@ a {
     color: white;
     text-align: center;
 }
+
 @media(max-width: 1660px) {
     .page-visual{
         margin: 2% 12% 0 12% ;
@@ -129,6 +147,7 @@ a {
         padding: 2% 12% 0 12% ;
     }
 }
+
 @media(max-width: 1300px){
     .page-visual{
         margin: 2% 5% 0 5%  ;
@@ -139,7 +158,6 @@ a {
 }
 
 @media(max-width: 980px){
-
     .page-visual{
         margin: 2% 5% 0 5%  ;
     }
