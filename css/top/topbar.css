@@ -105,10 +105,18 @@
 #mail{
     background-image: url('https://nypost.com/wp-content/themes/gtf/client/build/media/email-solid-72c3f17b721401de646d.svg');
     margin-top: 5px;
+    transition: opacity 0.3s ease
+}
+#mail:hover{
+    opacity: 0.5;
 }
 
 #search-glass{
     background-image: url('../../images/search_glass.png');
+    transition: opacity 0.3s ease
+}
+#search-glass:hover{
+    opacity: 0.5;
 }
 
 #menu{
