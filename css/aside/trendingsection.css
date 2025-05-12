@@ -51,11 +51,11 @@
     margin-top: 0.625rem;
 }
 
-#trending-section .container-flex-end>a{
+#trending-section .container-flex-end{
     font-weight: bold;
 }
 
-#trending-section .container-flex-end>a::after{
+#trending-section .container-flex-end::after{
     margin-left: 0.3125rem;
     content: "";
     display: inline-block;
@@ -66,7 +66,7 @@
     border-left: 10px solid black;
 }
 
-#trending-section .container-flex-end>a:hover,#trending-section .container-flex-end>a:hover::after{
+#trending-section .container-flex-end:hover,#trending-section .container-flex-end:hover::after{
     color: #C60800;
     border-left-color: #C60800;
 }
