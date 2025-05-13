@@ -30,3 +30,6 @@
     border-radius: 50%;
     overflow: hidden;
 }
+#horoscope-footer-text-container{
+    text-align: center;
+}
